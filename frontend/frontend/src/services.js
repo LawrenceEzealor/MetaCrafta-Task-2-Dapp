@@ -19,7 +19,7 @@ export async function getCake() {
     console.log("clicked")
     try {
       console.log("clicked")
-      const cake = await contract.getCar();
+      const cake = await contract.getCake();
       console.log("clicked");
       console.log(cake);
       // console.log(transaction.wait)
