@@ -1,4 +1,4 @@
-A Car Dapp where you can order any car you want
+A Cake Dapp where you can order any flavored cake of your choice
 
 ### Contract Address 
  
@@ -6,4 +6,4 @@ A Car Dapp where you can order any car you want
 
 ### Screnshots
 
-![Screenshot from 2024-04-12 21-26-21](https://github.com/Apolloelephen/Metacrafters-Dapp/assets/90451195/20d6b797-c462-4d71-876e-cf0a21799e8f)
+![Screenshot from 2024-04-12 21-26-21]()
