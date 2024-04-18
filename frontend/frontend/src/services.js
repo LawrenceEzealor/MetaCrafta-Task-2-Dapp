@@ -5,7 +5,7 @@ export async function requestAccount() {
   await window.ethereum.request({ method: "eth_requestAccounts" });
 }
 
-export async function getCar() {
+export async function getCake() {
   if (typeof window.ethereum !== "undefined") {
     await requestAccount();
     const provider = new ethers.BrowserProvider(window.ethereum);
@@ -19,18 +19,18 @@ export async function getCar() {
     console.log("clicked")
     try {
       console.log("clicked")
-      const car = await contract.getCar();
+      const cake = await contract.getCar();
       console.log("clicked");
-      console.log(car);
+      console.log(cake);
       // console.log(transaction.wait)
-      return car;
+      return cake;
     } catch (err) {
       console.log(err);
     }
   }
 }
 
-export async function setCar(_color, _brand, _model) {
+export async function setCake(_color, _flavor, _size) {
   if (typeof window.ethereum !== "undefined") {
     await requestAccount();
     const provider = new ethers.BrowserProvider(window.ethereum);
@@ -41,10 +41,10 @@ export async function setCar(_color, _brand, _model) {
       signer
     );
     try {
-      const carDetails = await contract.setCar(_color, _brand, _model);
-      carDetails.wait();
-      console.log("Car details set");
-      return carDetails;
+      const cakeDetails = await contract.setCar(_color, _flavor, _size);
+      cakeDetails.wait();
+      console.log("Cake details set");
+      return cakeDetails;
     } catch (err) {
       console.log(err);
     }
