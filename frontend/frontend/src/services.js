@@ -41,7 +41,7 @@ export async function setCake(_color, _flavor, _size) {
       signer
     );
     try {
-      const cakeDetails = await contract.setCar(_color, _flavor, _size);
+      const cakeDetails = await contract.setCake(_color, _flavor, _size);
       cakeDetails.wait();
       console.log("Cake details set");
       return cakeDetails;
