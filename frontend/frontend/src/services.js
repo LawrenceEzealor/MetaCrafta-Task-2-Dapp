@@ -1,5 +1,5 @@
 import contractABI from "./abi.json";
-const { ethers} = require("ethers");
+const { ethers } = require("ethers");
 
 export async function requestAccount() {
   await window.ethereum.request({ method: "eth_requestAccounts" });
@@ -16,9 +16,9 @@ export async function getCake() {
       contractABI,
       signer
     );
-    console.log("clicked")
+    console.log("clicked");
     try {
-      console.log("clicked")
+      console.log("clicked");
       const cake = await contract.getCake();
       console.log("clicked");
       console.log(cake);
@@ -50,4 +50,3 @@ export async function setCake(_color, _flavor, _size) {
     }
   }
 }
-

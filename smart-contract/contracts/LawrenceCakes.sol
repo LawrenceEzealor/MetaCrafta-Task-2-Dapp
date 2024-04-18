@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.20;
 
 contract MyCake {
     struct Cakes {
@@ -8,13 +8,13 @@ contract MyCake {
         string size;
     }
 
-    Car myCake;
+    Cakes myCake;
 
     function placeCakeOrder(string memory newColor, string memory newFlavor, string memory newSize) external {
-        myCake = Car(newColor, newFlavor, newSize);
+        myCake = Cakes(newColor, newFlavor, newSize);
     }
 
-    function getCakeOrder() external view returns (Cake memory) {
+    function getCakeOrder() external view returns (Cakes memory) {
         return myCake;
     }
 }

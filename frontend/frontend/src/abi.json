@@ -1,55 +1,55 @@
 [
-  {
-    "inputs": [],
-    "name": "getCar",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "string",
-            "name": "color",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "brand",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "model",
-            "type": "string"
-          }
-        ],
-        "internalType": "struct MyCar.Car",
-        "name": "",
-        "type": "tuple"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "newColor",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "newBrand",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "newModel",
-        "type": "string"
-      }
-    ],
-    "name": "setCar",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  }
-]
+    {
+      "inputs": [],
+      "name": "getCakeOrder",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "color",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "flavor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "size",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct MyCake.Cakes",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "newColor",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "newFlavor",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "newSize",
+          "type": "string"
+        }
+      ],
+      "name": "placeCakeOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
